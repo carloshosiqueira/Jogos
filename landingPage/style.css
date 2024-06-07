@@ -1,0 +1,78 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    height: 100vh;
+    width: 100vw;
+    background: linear-gradient(#0000cd, 30%, #8a2be2);
+    color: white;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30%;
+    border: 3px inset white;
+    border-radius: 15px;
+    height: fit-content;
+}
+main {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 25px;
+}
+.container {
+    width: 75%;
+    border: 1px solid white;
+    display: flex;
+    justify-content: center;
+    padding: 15px;
+}
+.card {
+    width: calc(100%/4);
+    margin: 0 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    background: #ccc;
+    border: 3px outset #00ff00;
+    transition: transform 0.3s, box-shadow 0.3s;
+    box-shadow: 2px 5px 5px #32abda;
+}
+.card p {
+    font-size: 1.5rem;
+    margin: 5px 0;
+    position: relative;
+}
+.card p::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background: white;
+    left: 0;
+    bottom: -2px;
+    transition: width 1s ease;
+}
+.card img {
+    height: 150px;
+    width: 150px;
+}
+.card:hover {
+    transform: rotateZ(2deg) scale(1.05);
+    cursor: pointer;
+}
+.card:hover p::after {
+    width: 100%;
+}
