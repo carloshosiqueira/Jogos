@@ -33,7 +33,9 @@ main {
 }
 .container {
     width: 75%;
+    height: 300px;
     border: 1px solid white;
+    background: linear-gradient(to bottom left, #0101cd, #8a2be2);
     display: flex;
     justify-content: center;
     padding: 15px;
@@ -47,6 +49,7 @@ main {
     justify-content: space-evenly;
     background: #d8bfd8;
     border: 2px solid violet;
+    border-radius: 15px;
     transition: transform 0.3s, box-shadow 0.3s;
     box-shadow: 5px 5px 10px #32abda;
 }
